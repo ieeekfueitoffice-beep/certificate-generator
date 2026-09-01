@@ -1,0 +1,10 @@
+[build]
+  base = "frontend"
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  # Keeps React Router working on page refresh/direct links
+  from = "/*"
+  to = "/index.html"
+  status = 200
